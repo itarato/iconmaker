@@ -1,0 +1,43 @@
+<!-- file: ./views/hello.html -->
+<html>
+<head>
+    <title>Icon Maker v0.1</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+</head>
+<body>
+
+<div class="container">
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Chrome Icon Generator V0.1</a>
+    </nav>
+</div>
+
+<br>
+
+<div class="container">
+    Thank you!
+
+    Your Chorme extension has been created. Get your package here:
+    
+    <br>
+    <br>
+
+    <a class="btn btn-success" href="/download/{{.package_name}}">Download {{.package_name}}.zip</a>
+
+    <br>
+    <br>
+    
+    You like it? <a href="/">Make new one.</a>
+</div>
+
+<div class="container">
+    <hr>
+    <small>Peter Arato | 2018</small>
+</div>
+
+<script>
+    window.location.href = "/download/{{.package_name}}";
+</script>
+
+</body>
+</html>
